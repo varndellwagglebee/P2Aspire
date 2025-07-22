@@ -12,6 +12,6 @@
     "include_azure_storage": "no",
     "include_azure_service_bus": "no",
     "aspire_deploy": "no",
-    "template_sha": "41579e335042f3811fa63ee6eebdcbec0a236024"
+    "template_sha": "aa5361a5d1a262713a2c6219ec779e2c697a1c1c"
   }
 }
