@@ -1,17 +1,17 @@
 {
-    "cookiecutter": {
-        "assembly_name": "P2Aspire",
-        "root_namespace": "p2aspire",
-        "database": "PostgreSql",
-        "database_name": "medical",
-        "is_aspire": "yes",
-        "include_audit": "yes",
-        "include_oauth": "no",
-        "include_azure_key_vault": "no",
-        "include_azure_application_insights": "no",
-        "include_azure_storage": "no",
-        "include_azure_service_bus": "no",
-        "aspire_deploy": "no",
-        "template_sha": "26b9ee853f14a39717d0b23ad4121e2694e2d240"
-    }
+  "cookiecutter": {
+    "assembly_name": "P2Aspire",
+    "root_namespace": "p2aspire",
+    "database": "PostgreSql",
+    "database_name": "medical",
+    "is_aspire": "yes",
+    "include_audit": "yes",
+    "include_oauth": "no",
+    "include_azure_key_vault": "no",
+    "include_azure_application_insights": "no",
+    "include_azure_storage": "no",
+    "include_azure_service_bus": "no",
+    "aspire_deploy": "no",
+    "template_sha": "41579e335042f3811fa63ee6eebdcbec0a236024"
+  }
 }
