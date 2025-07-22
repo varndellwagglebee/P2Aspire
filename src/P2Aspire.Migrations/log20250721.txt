@@ -1,0 +1,8 @@
+2025-07-21 14:33:18.294 -04:00 [INF] App Service name p2aspire-migrations
+2025-07-21 14:37:37.550 -04:00 [INF] App Service name p2aspire-migrations
+2025-07-21 14:42:59.804 -04:00 [INF] App Service name p2aspire-migrations
+2025-07-21 14:46:12.344 -04:00 [INF] App Service name p2aspire-migrations
+2025-07-21 14:47:18.482 -04:00 [INF] App Service name p2aspire-migrations
+2025-07-21 14:48:33.742 -04:00 [INF] App Service name p2aspire-migrations
+2025-07-21 14:51:57.253 -04:00 [INF] App Service name p2aspire-migrations
+2025-07-21 14:54:31.383 -04:00 [INF] App Service name p2aspire-migrations
