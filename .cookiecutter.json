@@ -1,6 +1,9 @@
 {
+  "cookiecutter": {
     "assembly_name": "P2Aspire",
     "root_namespace": "p2aspire",
+    "api_app_name": "P2Aspire.Api",
+    "api_web_url": "http://www.p2aspire.com/",
     "database": "PostgreSql",
     "database_name": "medical",
     "is_aspire": "yes",
@@ -12,4 +15,5 @@
     "include_azure_service_bus": "no",
     "aspire_deploy": "no",
     "template_sha": "aa5361a5d1a262713a2c6219ec779e2c697a1c1c"
+  }
 }
