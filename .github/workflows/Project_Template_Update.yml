@@ -12,7 +12,7 @@ on:
 
 jobs:
    validate-and-update:
-    uses: varndellwagglebee/shared-workflows/.github/workflows/validate_inputs.yml@main
+    uses: varndellwagglebee/shared-workflows/.github/workflows/validate_template_inputs.yml@main
     with:
       template_repo: https://github.com/varndellwagglebee/project.cookiecutter.git
       repo_branch: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.repo_branch || vars.TemplateUpdateBranch }}
