@@ -18,6 +18,20 @@
     "deployment_environment": "",
     "project_path": "",
     "template_path": "",
-    "template_sha": "134ad9cae31482b77fd0a2e6131787ccfdd768a6"
+    "oauth_client_id": "",
+    "oauth_client_secret": "",
+    "oauth_authority": "",
+    "oauth_audience": "",
+    "key_vault_name": "",
+    "key_vault_tenant_id": "",
+    "key_vault_client_id": "",
+    "key_vault_secret_name": "",
+    "app_insights_connection_string": "",
+    "storage_account_name": "",
+    "storage_container_name": "",
+    "service_bus_namespace": "",
+    "service_bus_topic": "",
+    "service_bus_subscription": null,
+    "template_sha": "603c21bd5465e508c20a16b14fbbb5fb0f6d570f"
   }
 }
