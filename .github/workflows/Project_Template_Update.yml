@@ -11,8 +11,8 @@ on:
     - cron: "0 7 * * MON"
 
 jobs:
-  update:
-    uses: varndellwagglebee/shared-workflows/.github/workflows/template_update.yml@main
+   validate-and-update:
+    uses: varndellwagglebee/shared-workflows/.github/workflows/validate_inputs.yml@main
     with:
       template_repo: https://github.com/varndellwagglebee/project.cookiecutter.git
       repo_branch: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.repo_branch || vars.TemplateUpdateBranch }}
