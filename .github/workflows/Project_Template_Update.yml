@@ -3,16 +3,16 @@ name: project_template_update
 on:
   workflow_dispatch:
     inputs:
-        repo_branch:
-          description: 'Branch to update'
-          required: true
-          default: develop
+      repo_branch:
+        description: 'Branch to update'
+        required: true
+        default: develop
   schedule:
     - cron: "0 7 * * MON"
 
 jobs:
-   validate-and-update:
+  validate-and-update:
     uses: varndellwagglebee/shared-workflows/.github/workflows/validate_template_inputs.yml@main
     with:
       template_repo: https://github.com/varndellwagglebee/project.cookiecutter.git
-      repo_branch: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.repo_branch || vars.TemplateUpdateBranch }}
+      repo_branch: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.repo_branch || (vars.TemplateUpdateBranch != '' && vars.TemplateUpdateBranch) }}
