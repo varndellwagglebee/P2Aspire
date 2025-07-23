@@ -14,6 +14,9 @@
     "include_azure_storage": "no",
     "include_azure_service_bus": "no",
     "aspire_deploy": "no",
+    "github_deploy": "no",
+    "project_path": "",
+    "template_path": "",
     "template_sha": "aa5361a5d1a262713a2c6219ec779e2c697a1c1c"
   }
 }
