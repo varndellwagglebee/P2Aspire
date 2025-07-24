@@ -1,5 +1,8 @@
 name: project_template_update
 
+permissions:
+  contents: write
+  
 on:
   workflow_dispatch:
     inputs:
