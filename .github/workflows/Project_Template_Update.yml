@@ -41,7 +41,7 @@ jobs:
             echo "branch_exists=true" >> $GITHUB_OUTPUT
           else
             echo "branch_exists=false" >> $GITHUB_OUTPUT
-            echo "⚠️ Branch '${{ steps.set_branch.outputs.branch_name }}' not found, skipping update."
+            echo "⚠️ Branch '${{ steps.set_branch.outputs.branch_name }}' not found; skipping update."
           fi
 
   # ---------------------------------------------------
@@ -53,5 +53,5 @@ jobs:
     if: needs.check_branch.outputs.branch_exists == 'true'
     uses: varndellwagglebee/shared-workflows/.github/workflows/template_update.yml@main
     with:
-      template_repo: https://github.com/varndellwagglebee/project.cookiecutter.git
+      template_repo: 'https://github.com/varndellwagglebee/project.cookiecutter.git'
       repo_branch: ${{ needs.check_branch.outputs.branch_name }}
