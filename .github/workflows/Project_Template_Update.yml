@@ -2,22 +2,19 @@ name: project_template_update
 
 permissions:
   contents: write
-  
+
 on:
   workflow_dispatch:
     inputs:
       repo_branch:
-        description: 'Branch to update'
+        description: "Branch to update"
         required: true
         default: develop
   schedule:
     - cron: "0 7 * * MON"
 
 jobs:
-  # ---------------------------------------------------
-  # 1) Figure out which branch we’re updating, then
-  #    test for its existence (without failing the job)
-  # ---------------------------------------------------
+  # 1) Figure out which branch we’re updating, then test for its existence
   check_branch:
     runs-on: ubuntu-latest
     outputs:
@@ -44,14 +41,11 @@ jobs:
             echo "⚠️ Branch '${{ steps.set_branch.outputs.branch_name }}' not found, skipping update."
           fi
 
-  # ---------------------------------------------------
-  # 2) Only if that branch exists, call the reusable
-  #    template_update workflow
-  # ---------------------------------------------------
+  # 2) Only if that branch exists, call the reusable template_update workflow
   update:
     needs: check_branch
     if: needs.check_branch.outputs.branch_exists == 'true'
     uses: varndellwagglebee/shared-workflows/.github/workflows/template_update.yml@main
     with:
-      template_repo: https://github.com/varndellwagglebee/project.cookiecutter.git
+      template_repo: "https://github.com/varndellwagglebee/project.cookiecutter.git"
       repo_branch: ${{ needs.check_branch.outputs.branch_name }}
