@@ -2,7 +2,8 @@ name: project_template_update
 
 permissions:
   contents: write
-
+  pull-requests:  write
+  
 on:
   workflow_dispatch:
     inputs:
